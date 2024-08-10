@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 9px solid #1b0bfa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
+}
+
+.display {
+    background-color: #fdf5f5;
+    color: #000000;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background-image: linear-gradient(to right, orange, rgb(248, 248, 109));
+    border: 3px solid #3a2d1b;
+    color: #3a2d1b;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, rgb(0, 174, 255), rgb(97, 97, 248));
+}
+
+.operator {
+    background-image: linear-gradient(to right, red, yellow);
+    color: #3a2d1b;
+}
+
+.operator:hover {
+    background-image: linear-gradient(to right, rgb(225, 31, 243),rgb(247, 119, 119));
+}
+
+.clear {
+    background-image: linear-gradient(to right, red, yellow);
+    color: #3a2d1b;
+}
+
+.clear:hover {
+    background-image: linear-gradient(to right, rgb(225, 31, 243),rgb(247, 119, 119));;
+}
